@@ -167,7 +167,7 @@ def test_integration():
 
     zeroconf_browser = Zeroconf()
     browser = ServiceBrowser(zeroconf_browser, type_, [on_service_state_change])
-
+    browser.start()
     zeroconf_registrar = Zeroconf()
     desc = {'path': '/~paulsm/'}
     info = ServiceInfo(

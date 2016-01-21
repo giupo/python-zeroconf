@@ -38,7 +38,7 @@ from six.moves import xrange
 
 __author__ = 'Paul Scott-Murphy, William McBrine'
 __maintainer__ = 'Jakub Stasiak <jakub@stasiak.at>'
-__version__ = '0.17.4'
+__version__ = '0.17.5'
 __license__ = 'LGPL'
 
 
@@ -995,7 +995,6 @@ class ServiceBrowser(threading.Thread):
         for h in handlers:
             self.service_state_changed.register_handler(h)
 
-        self.start()
 
     @property
     def service_state_changed(self):
